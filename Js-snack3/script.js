@@ -1,9 +1,10 @@
 let numeri_immessi_salvati = []
+let somma = 0;
 
 for (i = 0; i < 10; i ++) {
-    let numeri_input = +prompt("Inserire un numero:")
-    numeri_immessi_salvati.push(numeri_input);
-    
-    }
+    let numeri_input = +prompt("Inserire un numero:");
+    somma = somma + numeri_input;
 
-console.log(numeri_immessi_salvati);
+    numeri_immessi_salvati.push(numeri_input);
+    }
+console.log(somma);
